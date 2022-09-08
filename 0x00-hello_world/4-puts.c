@@ -1,14 +1,19 @@
 #include <stdio.h>
 
 /** 
+ * main - Entry point
+ *
  * Author: Michael
- * Result to return 0
+ * 
+ * Return: Normally 0 (Success)
  */
 int main(void)
 {
-	char string [70] = "\"Programming is like building a multilingual puzzle\"";
+	char string[70] = "\""Programming is like building a multilingual puzzl\"";
 	puts(string);
+
 	/* Oh God please help me */
+
 	puts("\"Programming is like building a multilingual puzzle\"");
 	return (0);
 }
