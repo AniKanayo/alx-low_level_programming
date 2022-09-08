@@ -1,3 +1,4 @@
+#!/bin/bash
 #include <stdio.h>
 
 /** 
@@ -9,7 +10,8 @@
  */
 int main(void)
 {
-	char string[70] = "\""Programming is like building a multilingual puzzl\"";
+	char string[70]="\"Programming is like bulding a multilingual puzzle\"";
+	
 	puts(string);
 
 	/* Oh God please help me */
