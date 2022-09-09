@@ -1,16 +1,15 @@
-#!/bin/bash
+# ! / bin / bash
 #include <stdio.h>
 
 /** 
- * main - Entry point
- *
+* main - Entry point
  * Author: Michael
  * 
  * Return: Normally 0 (Success)
  */
 int main(void)
 {
-	char string[70]="\"Programming is like bulding a multilingual puzzle\"";
+	char string[70] = " \"Programming is like bulding a multilingual puzzle\"";
 	
 	puts(string);
 
