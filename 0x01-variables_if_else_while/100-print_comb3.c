@@ -2,17 +2,17 @@
 /**
  * main - program compilation begins from main
  * Description: To print all possible combinations of two different numbers
- * author: sammykingx
+ * author: Micky
  * Return: 0 means success
  */
 int main(void)
 {
 	int a, b;
 
-	for (a = 0; a <= 9; a++)
-        {
-		for (b = 0; b <= 9; b++)
-                {
+	for (a = 48; a <=57; a++)
+	{
+		for (b = 49; b <= 57; b++)
+		{
 			if ( a != b && b > a)
                         {
 				putchar(a);
