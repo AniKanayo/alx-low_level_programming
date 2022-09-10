@@ -1,19 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - printing from zero to nine using putchar
+ * main - Entry point
+ * author: micky
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int n;
+	int micky;
 
-	for (n = '0' n <= '9' n++)
-	{
-		putchar(n);
-	}
+	for (micky = 48; micky < 58; micky++)
+		putchar(micky);
 	putchar('\n');
-
 	return (0);
 }
