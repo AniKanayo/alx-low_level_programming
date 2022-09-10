@@ -1,19 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * autor: kanayo
+ * main - To prints hexadecimal
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int micky;
-	char knayo;
+	int m = '0';
+	int k = 'a';
 
-	for (micky = 48; micky < 58; micky++)
-		putchar(micky);
-	for (kanayo = 'a'; kanayo <= 'f'; kanayo++)
-		putchar(kanayo);
+	while (m <= '9')
+	{
+		putchar(m);
+		m++;
+	}
+	while (k <= 'f')
+	{
+		putchar(k);
+		k++;
+	}
 	putchar('\n');
+
 	return (0);
 }
