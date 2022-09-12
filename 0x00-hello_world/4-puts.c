@@ -16,5 +16,6 @@ int main(void)
 	/* Tried printing it directly */
 
 	puts("\"Programming is like building a multilingual puzzle\"");
+	puts("\n");
 	return (0);
 }
