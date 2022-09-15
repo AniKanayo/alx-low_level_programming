@@ -9,9 +9,8 @@
  */
 int _isupper(int c)
 {
-	int c = 'alphabet'
-
-	if (c >= '65'; && c < '91')
+	
+	if (c >= 65; && c < 91)
 	{
 		return (1);
 	}
@@ -19,5 +18,4 @@ int _isupper(int c)
 	{
 		return (0);
 	}
-	putchar('\n');
 }
