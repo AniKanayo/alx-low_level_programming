@@ -10,7 +10,7 @@ vvoid print_most_numbers(void)
 
 	for (b = 48; b <= 57; b++)
 	{
-		if (b =! 50 && b =! 52)
+		if (b != 50 && b != 52)
 		{
 			_putchar(b);
 		}
