@@ -10,12 +10,10 @@ vvoid print_most_numbers(void)
 
 	for (b = 48; b <= 57; b++)
 	{
-	if (b =! 2 || b =! 4)
-	{
-		_putchar(b);
+		if (b =! 50 && b =! 52)
+		{
+			_putchar(b);
+		}
 	}
-	else
-	{
-		_putchar('\n');
-	}
+	_putchar('\n');
 }
