@@ -2,17 +2,17 @@
 
 /**
  * print_most_numbers - prints number
- * Return: void
  */
-vvoid print_most_numbers(void)
-{
-	int b;
 
-	for (b = 48; b <= 57; b++)
+void print_most_numbers(void)
+{
+	int i;
+
+	for (i = 48; i < 58; i++)
 	{
-		if (b != 50 && b != 52)
+		if (i != 50 && i != 52)
 		{
-			_putchar(b);
+			_putchar(i);
 		}
 	}
 	_putchar('\n');
