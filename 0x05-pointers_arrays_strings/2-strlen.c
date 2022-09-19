@@ -11,12 +11,13 @@ int _strlen(char *s)
 {
 
 	char n[] = "my name is michael";
-	int len = 0;
-	int ind = 0;
-	while (n[ind] != '\0')
+	int s = 0;
+	int i = 0;
+
+	while (n[i] != '\0')
 	{
-		len++;
-		ind++;
+		s++;
+		i++;
 	}
-	printf ("%d", len);
+	printf("%d", s);
 }
