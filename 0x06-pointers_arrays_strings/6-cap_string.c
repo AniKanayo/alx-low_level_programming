@@ -1,42 +1,36 @@
 #include "main.h"
 /**
- * cap_string - a function that capitalizes all words of a string
- * @m: pointer to array.
- * Separators of words: space,
+ * cap_string - capitalizes every first letter of a word in a string.
+ * separators of words are:  space,
  * tabulation, new line, ,, ;, ., !, ?, ", (, ), {, and }
- * Return: capitalized words
+ * @m: pointer to string.
+ *
+ *Return: pointer to m.
  */
-char *cap_string(char *)
+char *cap_string(char *m)
 {
-	int i; /* i represents the string length */
+	int count;
 
-	i = 0;
-	while (m[i] != '\0')
-	for (i = 0; m[i]; i++)
-	{
-		if (i == 0)
+/*  scan through string */
+	count = 0;
+	while (m[count] != '\0')
+	{/* if next character after count is a char , capitalise it */
+		if (m[0] >= 97 && m[0] <= 122)
 		{
-			if (m[i] >= 97 && m[i] <= 122)
+			m[0] = m[0] - 32;
+		}
+		if (m[count] == ' ' || m[count] == '\t' || m[count] == '\n'
+			|| m[count] == ',' || m[count] == ';' || m[count] == '.'
+			|| m[count] == '.' || m[count] == '!' || m[count] == '?'
+			|| m[count] == '"' || m[count] == '(' || m[count] == ')'
+			|| m[count] == '{' || m[count] == '}')
+		{
+			if (m[count + 1] >= 97 && m[count + 1] <= 122)
 			{
-				m[[i] = m[i] - 32;
+				m[count + 1] = m[count + 1] - 32;
 			}
 		}
-		else if (m[i - 1] == ' ' || m[i - 1] == '\t' || m[i - 1] == '\n'
-			|| m[i - 1] == ',' || m[i - 1] == ';' || m[i - 1] == '.'
-			|| m[i - 1] == '!' || m[i - 1] == '?' || m[i - 1] == '"'
-			|| m[i - 1] == '(' || m[i - 1] == ')' || m[i - 1] == '{'
-			|| m[i - 1] == '}')
-		{
-			if (m[i] >= 97 && m[i] <= 122)
-			{
-				m[[i] = m[i] - 32;
-			}
-		}
-		else
-		{
-			m[i];
-		}
-		i++;
+		count++;
 	}
 	return (m);
 }
