@@ -4,6 +4,7 @@
  * _strncat - function that concatenates two strings.
  * @dest: a pointer to destination string
  * @src: a pointer to source string
+ *@n: number of bytes from src.
  *
  * Return: return pointer to destination string.
  */
