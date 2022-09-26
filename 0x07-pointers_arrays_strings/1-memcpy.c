@@ -4,19 +4,21 @@
 * @dest: destination
 * @src: source
 * @n: number of bytes
-* Return: pointer to dest
+* Return: a pointer to dest
 */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 
-	int i = 0;
+int size = n;
 
-	if (i <= n)
-	while ((*dest = *src) != '\0')
+	if (size > 0)
 	{
-		dest++;
-		src++;
+		int i;
+
+		for (i = 0; i < size; i++)
+		dest[i] = src[i];
 	}
+
 	return (dest);
 }
