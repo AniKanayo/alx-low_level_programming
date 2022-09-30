@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - to print its own name and a newline character
@@ -10,8 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	argc = 0;
-
-	printf("%s\n", argv[argc]);
+	(void) argc;
+	printf("%s\n", *argv);
 	return (0);
 }
