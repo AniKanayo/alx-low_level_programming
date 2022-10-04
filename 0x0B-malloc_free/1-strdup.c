@@ -8,6 +8,7 @@
 char *_strdup(char *str)
 {
 	char *ptstr;
+	int count;
 
 	int str_len = 0; /* string length */
 	while (str[str_len] != '\0')
@@ -20,11 +21,11 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	int count;
 	for (count = 0; str[count] != '\0'; count++)
 	{
 		ptstr[count] = str[count];
 	}
-	ptstr[count] = '\0'
+	ptstr[count] = '\0';
+
 	return (ptstr);
 }
