@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *_strlen - count array
- *@s: array of elements
- *Return: 1
+ * _strlen - count array
+ * @s: array of elements
+ * Return: 1
  */
 
 char *_strdup(char *str)
