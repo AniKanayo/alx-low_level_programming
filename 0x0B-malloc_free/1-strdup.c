@@ -5,65 +5,26 @@
  *Return: 1
  */
 
-int _strlen(char *s)
-{
-	unsigned int i;
-
-	i = 0;
-	while (s[i] != '\0') /*count character of string*/
-	{
-		i++;
-	}
-
-	return (i);
-}
-
-/**
- *_strcpy - copy arrays
- *@src: array of elements
- *@dest: dest array
- *Return: dest
- */
-
-char *_strcpy(char *dest, char *src)
-{
-	int i = 0;
-
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-
-	return (dest);
-}
-
-/**
- *_strdup - array for prints a string
- *@str: array of elements
- *Return: pointer
- */
-
 char *_strdup(char *str)
 {
-	char *dst;
-	unsigned int size;
+	char *ptstr;
 
-	if (str == 0)
+	int str_len = 0; /* string length */
+	while (str[str_len] != '\0')
+	{
+		str_len++;
+	}
+	ptstr = malloc((str_len * sizeof(char)) + 1);
+	if (ptstr == NULL) /* check if malloc returns null */
 	{
 		return (NULL);
 	}
 
-	size = _strlen(str) + 1;
-
-	dst = (char *) malloc(size * sizeof(char));
-
-	if (dst == 0)
+	int count;
+	for (count = 0; str[count] != '\0'; count++)
 	{
-		return (NULL);
+		ptstr[count] = str[count];
 	}
-
-	_strcpy(dst, str);
-	return (dst);
+	ptstr[count] = '\0'
+	return (ptstr);
 }
