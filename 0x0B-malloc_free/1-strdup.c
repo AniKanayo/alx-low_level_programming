@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strlen - count array
- * @s: array of elements
- * Return: 1
+ * _strdup - function that returns a duplicates pointer
+ * @str: string pointer
+ * Return: a pointer
  */
 
 char *_strdup(char *str)
