@@ -57,7 +57,7 @@ int advanced_binary(int *array, size_t size, int value);
  * of integers using the Jump search algorithm in a singly linked list
  */
 listint_t *jump_list(listint_t *list, size_t size, int value);
-skiplist_t *linear_skip(skiplist_t *list, int value);
+
  /* print_list - Prints the content of a listint_t */
 void print_list(const listint_t *list);
 
